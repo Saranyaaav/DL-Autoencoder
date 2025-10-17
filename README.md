@@ -4,7 +4,7 @@
 To develop a convolutional autoencoder for image denoising application.
 
 ## THEORY
-
+This code implements a Denoising Autoencoder using PyTorch to clean noisy images from the MNIST dataset. It uses a convolutional neural network architecture, where the encoder compresses the input image into a lower-dimensional representation, and the decoder reconstructs the original image from this compressed form. To train the model to remove noise, Gaussian noise is added to the clean images, and the network learns to recover the original from the noisy version. The training process uses Mean Squared Error (MSE) as the loss function to measure the reconstruction error and the Adam optimizer to update the model weights. The autoencoder is trained over multiple epochs using mini-batches of data for efficiency. After training, the model's performance is visually evaluated by displaying the original, noisy, and denoised images side by side.
 
 ## Neural Network Model
 Include the neural network model diagram.
@@ -12,27 +12,27 @@ Include the neural network model diagram.
 ## DESIGN STEPS
 ### STEP 1: 
 
-Write your own steps
+Problem Understanding and Dataset Selection
 
 ### STEP 2: 
 
-
+Preprocessing the Dataset
 
 ### STEP 3: 
 
-
+Design the Convolutional Autoencoder Architecture
 
 ### STEP 4: 
 
-
+Compile and Train the Model
 
 ### STEP 5: 
 
-
+Evaluate the Model
 
 ### STEP 6: 
 
-
+Visualization and Analysis
 
 
 
@@ -177,12 +177,15 @@ visualize_denoising(model, test_loader)
 ### OUTPUT
 
 ### Model Summary
-Include your model summary
+<img width="697" height="551" alt="image" src="https://github.com/user-attachments/assets/f2890a6f-ee5e-4b07-8202-02f979c1c35d" />
+
 
 ### Training loss
+<img width="350" height="182" alt="image" src="https://github.com/user-attachments/assets/7591fd1e-cff7-4c04-ac82-2e8b820c7b4c" />
 
 ## Original vs Noisy Vs Reconstructed Image
-Include a few sample images here.
+<img width="1349" height="475" alt="image" src="https://github.com/user-attachments/assets/4eff3283-c189-49fe-b8f2-1dc58943be40" />
+
 
 ## RESULT
-Include your result here
+Therefore, To develop a convolutional autoencoder for image denoising application executed successfully.
